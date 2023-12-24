@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+ <!-- navbar -->
+ <nav class="navbar">
+    <div class="logo_item">
+      <i class="bx bx-menu" id="sidebarOpen"></i>
+      <img src="images/logo_clear (1).png" alt=""></i>VittGyan
+    </div>
+    <div class="search_bar">
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="navbar_content">
+      <i class="bi bi-grid"></i>
+      <i class='bx bx-sun' id="darkLight"></i>
+      <i class='bx bx-bell' ></i>
+      <!-- <img src="images/profile.jpg" alt="" class="profile" /> -->
+    </div>
+  </nav>
+ <!-- sidebar -->
+
+
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <a href="./Onboarding.html" class="signup-button">
+            Signup
+          </a>
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <a href="./Onboarding.html" class="signup-button">
+            Login
+          </a>
+        </form>
+      </div>
+
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".signup header"),
+          loginHeader = document.querySelector(".login header");
+
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+      </script>
+      <script src="./js/script.js"></script>
+      
+    </section>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="f-paSmy9soAgH6sWeCkis"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+  </body>
+</html>

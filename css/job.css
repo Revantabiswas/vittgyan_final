@@ -1,0 +1,116 @@
+CSS
+/* General styling */
+CSS
+/* Title bar */
+.container-xxl {
+  background-color: #f0f0f0; /* Light gray background for title bar */
+  padding: 20px 0; /* Add padding for visual spacing */
+}
+
+.container-xxl h1 {
+  font-size: 30px; /* Larger font size for title */
+  font-weight: 700; /* Bolder font weight for emphasis */
+  color: #333; /* Darker text color for readability */
+}
+
+/* Buttons */
+.tab-class .nav-pills .nav-link {
+  background-color: #e0e0e0; /* Lighter gray background for buttons */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Add padding for button content */
+  font-weight: 600; /* Bolder font weight for button text */
+  color: #333; /* Darker text color for readability */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.tab-class .nav-pills .nav-link:hover {
+  background-color: #d0d0d0; /* Slightly darker background on hover */
+}
+
+.tab-class .nav-pills .nav-link.active {
+  background-color: #007bff; /* Blue background for active button */
+  color: #fff; /* White text for active button */
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Job listing section */
+.job-listing {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+.job-item h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.job-item span {
+  color: #999;
+  font-size: 14px;
+}
+
+.job-item img {
+  border-radius: 50%;
+}
+
+.job-item .text-start {
+  margin-left: 10px;
+}
+
+.job-item .btn-square {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.job-item .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.job-item .btn-light {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* Tabs */
+.tab-class .nav-pills .nav-link.active,
+.tab-class .nav-pills .nav-link.active:hover,
+.tab-class .nav-pills .nav-link.active:focus {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Browse More Jobs button */
+.btn-primary.py-3.px-5 {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
